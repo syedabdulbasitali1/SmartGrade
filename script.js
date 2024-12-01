@@ -1,9 +1,11 @@
+
 console.log("hello");
 function calculatePercentage() {
     // Get values from input fields
     const obtainedMarks = parseFloat(document.getElementById("obtainedMarks").value);
     const totalMarks = parseFloat(document.getElementById("totalMarks").value);
     const resultElement = document.getElementById("result");
+     resultElement.style.margin = `12px`;
 
     // Check if inputs are valid
     if (isNaN(obtainedMarks) || isNaN(totalMarks) || totalMarks <= 0  || obtainedMarks > totalMarks) {
