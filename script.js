@@ -31,5 +31,6 @@ function calculatePercentage() {
       default:
         resultElement.innerText = `You Failed. Your percentage is ${percentage.toFixed(2)}%.`;
         resultElement.style.color = `red`;
+        resultElement.style.margin = `12px`;
     }
   }
