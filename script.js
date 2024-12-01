@@ -6,7 +6,7 @@ function calculatePercentage() {
     const resultElement = document.getElementById("result");
 
     // Check if inputs are valid
-    if (isNaN(obtainedMarks) || isNaN(totalMarks) || totalMarks <= 0) {
+    if (isNaN(obtainedMarks) || isNaN(totalMarks) || totalMarks <= 0  || obtainedMarks > totalMarks) {
       resultElement.innerText = "Please enter valid marks!";
       return;
     }
@@ -30,5 +30,6 @@ function calculatePercentage() {
         break;
       default:
         resultElement.innerText = `You Failed. Your percentage is ${percentage.toFixed(2)}%.`;
+        resultElement.style.color = `red`;
     }
   }
